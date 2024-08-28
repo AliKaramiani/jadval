@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جدول بدون مشخصات عمومی</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .no-border {
+        border: none !important;
+      }
+      .rtl {
+        direction: rtl;
+      }
+      .borderless {
+        border: none !important;
+      }
+      .vertical-text {
+        writing-mode: vertical-rl;
+        text-align: center;
+        line-height: 1.5;
+      }  
+        .cell-width-1 {  
+            width: 666px; /* عرض سلول اول */  
+        }  
+        .cell-width-2 {  
+            width: 150px; /* عرض سلول دوم */  
+        }  
+        .cell-width-3 {  
+            width: 100px; /* عرض سلول سوم */  
+        }  
+    </style>  
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <table class="table table-bordered text-center rtl">
+        <thead>
+          <tr>
+            <td class="text-start" style="width: 30%">
+              <div>تاریخ: 1402/07/01</div>
+              <div>شماره: 12345</div>
+            </td>
+            <td colspan="2" class="text-center" style="width: 40%">
+              <h4>فرم پرسشنامه استخدام</h4>
+            </td>
+            <td class="text-end" style="width: 30%">
+              <img src="/api/placeholder/100/50" alt="لوگوی شرکت" />
+            </td>
+          </tr>
+          <tr class="no-border">
+            <td class="text-start" colspan="4">
+              <div>
+                عنوان شغلی مورد تقاضا: ...................................
+              </div>
+              <div>
+                نحوه آشنایی:
+                <input type="checkbox" /> جاب ویژن :
+                ............................................<br />
+                <input type="checkbox" /> جابینجا : .........................<br />
+                <input type="checkbox" /> دیوار : .........................<br />
+                <input type="checkbox" /> معرف : .........................<br />
+              </div>
+            </td>
+          </tr>
+    
+        </thead>
+        <tbody>
+          <tr >
+            <td class="borderless text-start vertical-text  cell-width-1" rowspan="8">مشخصات عمومی</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
